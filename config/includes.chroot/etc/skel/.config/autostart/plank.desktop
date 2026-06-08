@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Plank Dock
+Comment=Start the reOS dock
+Exec=plank
+OnlyShowIn=XFCE;
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true
+

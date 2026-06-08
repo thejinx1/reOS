@@ -1,0 +1,14 @@
+[Configuration]
+FontName=JetBrains Mono 10
+MiscAlwaysShowTabs=FALSE
+MiscBell=FALSE
+MiscBordersDefault=TRUE
+MiscCursorBlinks=FALSE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
+MiscDefaultGeometry=96x28
+ScrollingLines=10000
+ColorForeground=#f8fafc
+ColorBackground=#101820
+ColorCursor=#ffcf5a
+ColorPalette=#101820;#d1495b;#36d399;#ffcf5a;#4ea1d3;#b084cc;#4ecdc4;#f8fafc;#64748b;#f07178;#7bd88f;#ffd166;#7cc7f2;#c792ea;#80cbc4;#ffffff
+

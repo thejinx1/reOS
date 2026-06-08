@@ -16,6 +16,19 @@ Haziran 2026 itibariyla guncel stable surumdur.
 - `scripts/`: host hazirlama, ISO uretme, temizleme ve proje kontrol betikleri.
 - `docs/`: yol haritasi, marka notlari ve guvenlik/release kontrol listesi.
 
+## UI tabani
+
+reOS su anda Xfce ustunde macOS esintili bir masaustu katmani kullanir:
+
+- Ust panel: Whisker menu, gorev listesi, sistem tepsisi, ses ve saat.
+- Alt dock: Plank ile Firefox, dosya yoneticisi, terminal, ayarlar ve UI demo.
+- Tema: Orchis GTK, Papirus ikonlar, Inter/Roboto/JetBrains Mono fontlari.
+- Efektler: Picom ile hafif golge ve fade efektleri.
+- UI demo: `JoaoGabriel-Lima/macos-ui-clone` reposu
+  `/usr/share/reos/ui/macos-ui-clone` altina dahil edilir.
+
+Detaylar: `docs/UI.md`
+
 ## Gereksinimler
 
 ISO uretimi Linux uzerinde root yetkisi ister. Windows kullaniyorsan en rahat
@@ -74,6 +87,8 @@ sudo sh ./scripts/clean.sh --purge
 - Paket secimi: `config/package-lists/*.list.chroot`
 - Varsayilan dil/klavye: `config/hooks/normal/0200-reos-locale.hook.chroot`
 - Masaustu arka plani: `config/includes.chroot/usr/share/backgrounds/reos/wallpaper.svg`
+- macOS esintili UI: `config/includes.chroot/etc/skel/.config/xfce4/`
+- Yerel UI demo: `config/includes.chroot/usr/share/reos/ui/macos-ui-clone/`
 - Yol haritasi: `docs/ROADMAP.md`
 
 ## Notlar

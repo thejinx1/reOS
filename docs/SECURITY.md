@@ -8,6 +8,10 @@
 - Firmware paketlerini dahil etme kararini hedef lisans politikasina gore tekrar
   degerlendir.
 - Kullanilan Debian codename'inin destek aldigini kontrol et.
+- `JoaoGabriel-Lima/macos-ui-clone` kopyasinin MIT lisans dosyasinin ISO icinde
+  kaldigini dogrula.
+- Yerel UI demo HTML dosyalarinda gereksiz CDN veya uzak script kalmadigini
+  kontrol et.
 
 ## ISO urettikten sonra
 
@@ -30,4 +34,3 @@ Sanal makine testleri:
 - `README.md` ve surum notlarinda bilinen sorunlari yaz.
 - ISO checksum dosyasini ayni release alanina koy.
 - Ucuncu taraf marka/logolar icin izinleri kontrol et.
-

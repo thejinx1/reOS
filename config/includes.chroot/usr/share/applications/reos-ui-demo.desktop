@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=reOS UI Demo
+Comment=Bundled macOS UI clone demo for reOS
+Exec=firefox-esr --new-window file:///usr/share/reos/ui/macos-ui-clone/boot/index.html
+Icon=/usr/share/reos/ui/macos-ui-clone/img/icons/launchpad.png
+Terminal=false
+Categories=Utility;System;
+

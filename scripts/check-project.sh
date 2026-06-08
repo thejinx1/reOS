@@ -15,6 +15,12 @@ config/package-lists/reos-firmware.list.chroot
 config/hooks/normal/0100-reos-branding.hook.chroot
 config/hooks/normal/0200-reos-locale.hook.chroot
 config/hooks/normal/0300-reos-cleanup.hook.chroot
+config/hooks/normal/0400-reos-ui.hook.chroot
+config/includes.chroot/usr/share/applications/reos-ui-demo.desktop
+config/includes.chroot/usr/share/reos/ui/macos-ui-clone/index.html
+config/includes.chroot/usr/share/reos/ui/macos-ui-clone/LICENSE
+config/includes.chroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+config/includes.chroot/etc/skel/.config/plank/dock1/settings
 "
 
 missing=0
@@ -47,4 +53,3 @@ else
 fi
 
 echo "Proje iskeleti saglam gorunuyor."
-

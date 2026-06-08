@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Picom Compositor
+Comment=Start compositor shadows and fades
+Exec=picom --config ~/.config/picom/picom.conf
+OnlyShowIn=XFCE;
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true
+

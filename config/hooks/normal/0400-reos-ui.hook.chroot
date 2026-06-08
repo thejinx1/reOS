@@ -1,0 +1,29 @@
+#!/bin/sh
+set -eu
+
+chmod -R a+rX /usr/share/reos/ui/macos-ui-clone
+
+if [ -f /usr/share/applications/reos-ui-demo.desktop ]; then
+  chmod 0755 /usr/share/applications/reos-ui-demo.desktop
+fi
+
+if [ -f /etc/skel/Masaustu/reos-ui-demo.desktop ]; then
+  chmod 0755 /etc/skel/Masaustu/reos-ui-demo.desktop
+fi
+
+install -d -m 0755 /usr/share/doc/reos
+cat > /usr/share/doc/reos/macos-ui-clone-UPSTREAM.txt <<'EOF'
+Bundled UI demo source:
+  https://github.com/JoaoGabriel-Lima/macos-ui-clone
+
+Upstream commit used while preparing this base:
+  f4f28429e38ff47f60deab83e6d11030b2c475b4
+
+License:
+  MIT. See /usr/share/reos/ui/macos-ui-clone/LICENSE.
+
+Integration note:
+  reOS keeps this project as a local UI demo and visual reference. The system
+  shell remains Debian/Xfce with reOS branding.
+EOF
+

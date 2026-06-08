@@ -1,0 +1,36 @@
+body {
+  font-family: Roboto, Inter, Cantarell, "DejaVu Sans", sans-serif;
+}
+
+.nav_icon {
+  align-items: center;
+  display: inline-flex;
+  font-family: Inter, Cantarell, "DejaVu Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0;
+  min-width: 22px;
+}
+
+.fa-paper-plane::before {
+  content: "NAV";
+}
+
+.fa-wifi::before {
+  content: "NET";
+}
+
+.fa-volume-up::before {
+  content: "VOL";
+}
+
+.fa-search::before {
+  content: "SRCH";
+}
+
+.fa-sliders-h::before {
+  content: "CTL";
+}
+

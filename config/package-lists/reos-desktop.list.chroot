@@ -19,3 +19,15 @@ pavucontrol
 network-manager-gnome
 blueman
 
+# macOS-inspired reOS desktop layer
+plank
+picom
+orchis-gtk-theme
+papirus-icon-theme
+fonts-inter
+fonts-jetbrains-mono
+fonts-roboto
+libjs-jquery
+libjs-jquery-ui
+xfce4-pulseaudio-plugin
+xfce4-whiskermenu-plugin

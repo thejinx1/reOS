@@ -18,6 +18,9 @@ Baslangic marka katmani su anda bilincli olarak kucuk tutuldu:
   `/etc/lsb-release`, `/etc/issue`, hostname ve sudo davranisi.
 - `config/hooks/normal/0200-reos-locale.hook.chroot`: locale ve klavye.
 - `config/includes.chroot/usr/share/backgrounds/reos/wallpaper.svg`: ilk duvar kagidi.
+- `config/includes.chroot/etc/skel/.config/xfce4/`: varsayilan Xfce panel,
+  pencere yoneticisi ve masaustu davranisi.
+- `config/includes.chroot/etc/skel/.config/plank/`: alt dock yerlesimi.
 
 ## Dagitim karari
 
@@ -26,3 +29,6 @@ markanla tut. Debian adini taban teknoloji olarak anmak temizdir; Debian logosu
 ve markasini urunun kendi logosu gibi kullanmadan once Debian marka kurallarini
 kontrol et.
 
+macOS UI clone reposu sadece yerel demo ve gorsel referans olarak dahil edilir.
+Sistem kimligi reOS olarak kalmali; Apple/macOS markalari reOS urun markasi gibi
+kullanilmamalidir.
