@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+
+sed -i 's/^# *\(tr_TR.UTF-8 UTF-8\)/\1/' /etc/locale.gen
+sed -i 's/^# *\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen
+locale-gen
+update-locale LANG=tr_TR.UTF-8 LANGUAGE=tr_TR:tr LC_ALL=
+
+cat > /etc/default/keyboard <<'EOF'
+XKBMODEL="pc105"
+XKBLAYOUT="tr"
+XKBVARIANT=""
+XKBOPTIONS=""
+BACKSPACE="guess"
+EOF
+

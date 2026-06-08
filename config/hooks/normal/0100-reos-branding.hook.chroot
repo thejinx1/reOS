@@ -1,0 +1,36 @@
+#!/bin/sh
+set -eu
+
+cat > /etc/os-release <<'EOF'
+PRETTY_NAME="reOS 0.1 (Debian GNU/Linux 13 trixie)"
+NAME="reOS"
+VERSION_ID="0.1"
+VERSION="0.1"
+VERSION_CODENAME=trixie
+ID=reos
+ID_LIKE=debian
+HOME_URL="https://example.invalid/reos"
+SUPPORT_URL="https://example.invalid/reos/support"
+BUG_REPORT_URL="https://example.invalid/reos/issues"
+EOF
+
+cat > /etc/lsb-release <<'EOF'
+DISTRIB_ID=reOS
+DISTRIB_RELEASE=0.1
+DISTRIB_CODENAME=trixie
+DISTRIB_DESCRIPTION="reOS 0.1"
+EOF
+
+cat > /etc/issue <<'EOF'
+reOS 0.1 \n \l
+
+EOF
+
+printf 'reos\n' > /etc/hostname
+
+install -d -m 0755 /etc/sudoers.d
+cat > /etc/sudoers.d/010_reos_live_user <<'EOF'
+%sudo ALL=(ALL:ALL) NOPASSWD: ALL
+EOF
+chmod 0440 /etc/sudoers.d/010_reos_live_user
+

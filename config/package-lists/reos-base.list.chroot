@@ -1,0 +1,27 @@
+# Live system essentials
+live-boot
+live-config
+systemd-sysv
+sudo
+locales
+console-setup
+keyboard-configuration
+ca-certificates
+curl
+wget
+gnupg
+bash-completion
+less
+nano
+vim-tiny
+htop
+pciutils
+usbutils
+lshw
+
+# Networking
+network-manager
+wpasupplicant
+wireless-tools
+avahi-daemon
+

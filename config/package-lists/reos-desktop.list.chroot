@@ -1,0 +1,21 @@
+# Xfce desktop baseline
+task-desktop
+task-xfce-desktop
+lightdm
+lightdm-gtk-greeter
+xfce4-terminal
+mousepad
+thunar-archive-plugin
+file-roller
+ristretto
+parole
+gvfs-backends
+
+# Daily-use applications
+firefox-esr
+libreoffice
+evince
+pavucontrol
+network-manager-gnome
+blueman
+

@@ -1,0 +1,10 @@
+# Common firmware for real hardware. Remove this file if you want a fully-free image.
+firmware-linux
+firmware-linux-free
+firmware-linux-nonfree
+firmware-iwlwifi
+firmware-realtek
+firmware-atheros
+intel-microcode
+amd64-microcode
+

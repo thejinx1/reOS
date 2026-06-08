@@ -1,0 +1,24 @@
+# live-build output
+.build/
+.cache/
+binary/
+cache/
+chroot/
+local/
+
+# Generated images and metadata
+*.hybrid.iso
+*.iso
+*.img
+*.buildlog
+*.contents
+*.packages
+build.log
+live-image-*
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+

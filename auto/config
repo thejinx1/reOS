@@ -1,0 +1,35 @@
+#!/bin/sh
+set -eu
+
+PROJECT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+
+if [ -f "${PROJECT_DIR}/reos.env" ]; then
+  # shellcheck disable=SC1091
+  . "${PROJECT_DIR}/reos.env"
+fi
+
+: "${REOS_NAME:=reOS}"
+: "${REOS_VERSION:=0.1}"
+: "${REOS_DEBIAN_CODENAME:=trixie}"
+: "${REOS_ARCH:=amd64}"
+: "${REOS_HOSTNAME:=reos}"
+: "${REOS_USERNAME:=reos}"
+
+lb config noauto \
+  --mode debian \
+  --architectures "${REOS_ARCH}" \
+  --distribution "${REOS_DEBIAN_CODENAME}" \
+  --archive-areas "main contrib non-free-firmware" \
+  --binary-images iso-hybrid \
+  --debian-installer live \
+  --apt-recommends true \
+  --apt-indices false \
+  --security true \
+  --updates true \
+  --backports false \
+  --iso-application "${REOS_NAME} Live" \
+  --iso-publisher "${REOS_NAME} Project" \
+  --iso-volume "REOS_${REOS_VERSION}" \
+  --bootappend-live "boot=live components username=${REOS_USERNAME} hostname=${REOS_HOSTNAME} quiet splash" \
+  "${@}"
+
